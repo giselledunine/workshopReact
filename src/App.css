@@ -43,3 +43,37 @@
   align-items: center;
   justify-content: center;
 }
+
+.App Nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar-brand{
+  float: left;
+  text-decoration: none;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navlink{
+ 
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navlink:hover{
+  background-color: #111;
+}
