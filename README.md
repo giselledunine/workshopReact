@@ -1,21 +1,56 @@
 # Application d'ajout et de modification d'élèves dans la base de données Firease
 
-Cette application permet d'ajouter les nouveles informations d'un nouvelle élève et de calculer l'empreinte carbone de son trajet école/maison et maison/travail par jour
+Cette application permet d'ajouter les nouvelles informations d'un nouvel élève et de calculer l'empreinte carbone de son trajet école/maison et maison/travail par jour
 
 ## Structure
 
 ### Ajout d'élèves
 `./src/components/AddStudent`
-Cette vue permet d'ajoute un élève
+Cette vue permet d'ajouter un élève
 
-Le calcul se fait de la même maniere que le script qui permet de mettre à jour la base de données tous les mois. Les calcules sont expliquer dans ce projet et dans le compte rendu technique.
+Le format de l'adresse sera gérér par l'api google place qui permet d'être sur que l'adresse exite.
+
+Le calcul se fait de la même manière que le script qui permet de mettre à jour la base de données tous les mois. Les calcules sont expliqués dans ce projet et dans le compte rendu technique.
+
+La fonction <b>handleSubmit</b> n'est pas utilisé pour l'instant car je n'ai pas eu le temps de formater les données entré dans la base, pour l'instant c'est la fonction <b>handleSuccess</b> pour un semblant de validation
 
 `./src/components/UpdateStudent`
-Cette vue permet de mettre un élève déjà existant, cette partie est en cours de développement donc indisponnible
+Cette vue permet de mettre un élève déjà existant, cette partie est en cours de développement donc indisponible
+Réflexion sur la mise en place:
+- D'une part un moyen de s'authentifier pour avoir accès à ses informations si c'est à l'élève de changer ses informations
+- Ou alors la modification des adresses est uniquement accessible à l'administration ui peuvent alors chercher l'élève dans une liste et modifier ses infos
 
 ## But de l'application
 
 Cette application à pour but de rendre très accéssible la données afin d'avoir les staistiques les plus exacte possible
+
+## Mise en place dud projet
+
+Création du projet
+`npx create-react-app workshopReact`
+
+Pour l'utilisation du projet, installation des dépendances suivantes :
+
+`npm install @material-ui/core @material-ui/icons @material-ui/styles` <br/> package theme material.ui version 4  [https://mui.com/](https://mui.com/) <br/>
+`npm install axios` pour les requêtes api <br/>
+`npm install firebase` pour récupérer les données sur la base, les accées base seront communiquer ultérieurement <br/>
+`npm install moment` pour obtenir les dates <br/>
+
+## Déploiement de l'application
+
+Plusieurs options sont viable :
+
+### Firebase
+`npm install -g firebase-tools`
+<br/>`firebase login`
+<br/> `firebase init` <br/>
+Ensuite chosisir le dossier built pour le déploiement
+
+### AWS
+
+Via AWS Amplify Console, le déploiement se fait en continu et simplement [AWS Amplify Console](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Famplify%2Fhome%3Ffromtb%3Dtrue%26hashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-east-1_f5d0daa6621ab0bc&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Famplify&forceMobileApp=0&code_challenge=SV8oZ0IV2-9KasgeCzWX4RnGw8XsNVLjdytLG0dSLGA&code_challenge_method=SHA-256)
+
+#### Le choix va dépendre de la tarification
 
 ## Available Scripts
 
