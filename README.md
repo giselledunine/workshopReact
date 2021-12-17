@@ -12,6 +12,8 @@ Le format de l'adresse sera gérér par l'api google place qui permet d'être su
 
 Le calcul se fait de la même manière que le script qui permet de mettre à jour la base de données tous les mois. Les calcules sont expliqués dans ce projet et dans le compte rendu technique.
 
+La fonction <b>handleSubmit</b> n'est pas utilisé pour l'instant car je n'ai pas eu le temps de formater les données entré dans la base, pour l'instant c'est la fonction <b>handleSuccess</b> pour un semblant de validation
+
 `./src/components/UpdateStudent`
 Cette vue permet de mettre un élève déjà existant, cette partie est en cours de développement donc indisponible
 Réflexion sur la mise en place:
