@@ -8,6 +8,8 @@ Cette application permet d'ajouter les nouvelles informations d'un nouvel élèv
 `./src/components/AddStudent`
 Cette vue permet d'ajouter un élève
 
+Le format de l'adresse sera gérér par l'api google place qui permet d'être sur que l'adresse exite.
+
 Le calcul se fait de la même manière que le script qui permet de mettre à jour la base de données tous les mois. Les calcules sont expliqués dans ce projet et dans le compte rendu technique.
 
 `./src/components/UpdateStudent`
