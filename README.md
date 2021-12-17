@@ -17,6 +17,34 @@ Cette vue permet de mettre un élève déjà existant, cette partie est en cours
 
 Cette application à pour but de rendre très accéssible la données afin d'avoir les staistiques les plus exacte possible
 
+## Mise en place dud projet
+
+Création du projet
+`npx create-react-app workshopReact`
+
+Pour l'utilisation du projet, installation des dépendances suivantes :
+
+`npm install @material-ui/core @material-ui/icons @material-ui/styles` <br/> package theme material.ui version 4  [https://mui.com/](https://mui.com/) <br/>
+`npm install axios` pour les requêtes api <br/>
+`npm install firebase` pour récupérer les données sur la base, les accées base seront communiquer ultérieurement <br/>
+`npm install moment` pour obtenir les dates <br/>
+
+## Déploiement de l'application
+
+Plusieurs options sont viable :
+
+###Firebase
+`npm install -g firebase-tools`
+<br/>`firebase login`
+<br/> `firebase init` <br/>
+Ensuite chosisir le dossier built pour le déploiement
+
+###AWS
+
+Via AWS Amplify Console, le déploiement se fait en continue et simplement [AWS Amplify Console](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Famplify%2Fhome%3Ffromtb%3Dtrue%26hashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-east-1_f5d0daa6621ab0bc&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Famplify&forceMobileApp=0&code_challenge=SV8oZ0IV2-9KasgeCzWX4RnGw8XsNVLjdytLG0dSLGA&code_challenge_method=SHA-256)
+
+####Le choix va dépendre de la tarification
+
 ## Available Scripts
 
 In the project directory, you can run:
