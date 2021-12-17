@@ -12,6 +12,9 @@ Le calcul se fait de la même maniere que le script qui permet de mettre à jour
 
 `./src/components/UpdateStudent`
 Cette vue permet de mettre un élève déjà existant, cette partie est en cours de développement donc indisponnible
+Réflexion sur la mise en place:
+- D'une part un moyen de s'auhentifier pour avoir accès à ses information si c'est à l'élève de changer ses informations
+- Ou alors la modifications dess adresses est uniquement accessible à l'administration ui peuvent alors chercher l'élève dans une liste et modifier ses infos
 
 ## But de l'application
 
