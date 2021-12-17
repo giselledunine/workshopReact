@@ -1,50 +1,50 @@
-# Application d'ajout et de modification d'élèves dans la base de données Firease
+# Application d'ajout et de modification d'élèves dans la base de données Firebase
 
-Cette application permet d'ajouter les nouvelles informations d'un nouvel élève et de calculer l'empreinte carbone de son trajet école/maison et maison/travail par jour
+Cette application permet d'ajouter les nouvelles informations d'un nouvel élève et de calculer l'empreinte carbone de son trajet école/maison et maison/travail par jour.
 
 ## Structure
 
 ### Ajout d'élèves
 `./src/components/AddStudent`
-Cette vue permet d'ajouter un élève
+Cette vue permet d'ajouter un élève.
 
-Le format de l'adresse sera gérér par l'api google place qui permet d'être sur que l'adresse exite.
+Le format de l'adresse sera géré par l'api google place qui permet d'être sûr que l'adresse exite.
 
-Le calcul se fait de la même manière que le script qui permet de mettre à jour la base de données tous les mois. Les calcules sont expliqués dans ce projet et dans le compte rendu technique.
+Le calcul se fait de la même manière que le script qui permet de mettre à jour la base de données tous les mois. Les calculs sont expliqués dans ce projet et dans le compte rendu technique.
 
-La fonction <b>handleSubmit</b> n'est pas utilisé pour l'instant car je n'ai pas eu le temps de formater les données entré dans la base, pour l'instant c'est la fonction <b>handleSuccess</b> pour un semblant de validation
+La fonction <b>handleSubmit</b> n'est pas utilisée pour l'instant car nous n'avons pas eu le temps de formater les données entrées dans la base, pour l'instant c'est la fonction <b>handleSuccess</b> pour un semblant de validation.
 
 `./src/components/UpdateStudent`
-Cette vue permet de mettre un élève déjà existant, cette partie est en cours de développement donc indisponible
+Cette vue permet de mettre un élève déjà existant, cette partie est en cours de développement donc indisponible.
 Réflexion sur la mise en place:
-- D'une part un moyen de s'authentifier pour avoir accès à ses informations si c'est à l'élève de changer ses informations
-- Ou alors la modification des adresses est uniquement accessible à l'administration ui peuvent alors chercher l'élève dans une liste et modifier ses infos
+- D'une part un moyen de s'authentifier pour avoir accès à ses informations si l'élève souhaite changer ses informations.
+- Ou alors la modification des adresses est uniquement accessible à l'administration qui peut alors chercher l'élève dans une liste et modifier ses informations.
 
 ## But de l'application
 
-Cette application à pour but de rendre très accéssible la données afin d'avoir les staistiques les plus exacte possible
+Cette application a pour but de rendre très accessible la donnée afin d'avoir les statistiques les plus exactes possible.
 
-## Mise en place dud projet
+## Mise en place du projet
 
-Création du projet
+Création du projet :
 `npx create-react-app workshopReact`
 
 Pour l'utilisation du projet, installation des dépendances suivantes :
 
 `npm install @material-ui/core @material-ui/icons @material-ui/styles` <br/> package theme material.ui version 4  [https://mui.com/](https://mui.com/) <br/>
 `npm install axios` pour les requêtes api <br/>
-`npm install firebase` pour récupérer les données sur la base, les accées base seront communiquer ultérieurement <br/>
+`npm install firebase` pour récupérer les données sur la base, les accès base seront communiqués ultérieurement <br/>
 `npm install moment` pour obtenir les dates <br/>
 
 ## Déploiement de l'application
 
-Plusieurs options sont viable :
+Plusieurs options sont viables :
 
 ### Firebase
 `npm install -g firebase-tools`
 <br/>`firebase login`
 <br/> `firebase init` <br/>
-Ensuite chosisir le dossier built pour le déploiement
+Ensuite chosir le dossier built pour le déploiement.
 
 ### AWS
 
