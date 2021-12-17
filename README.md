@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# Application d'ajout et de modification d'élèves dans la base de données Firease
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cette application permet d'ajouter les nouveles informations d'un nouvelle élève et de calculer l'empreinte carbone de son trajet école/maison et maison/travail par jour
+
+## Structure
+
+### Ajout d'élèves
+`./src/components/AddStudent`
+Cette vue permet d'ajoute un élève
+
+Le calcul se fait de la même maniere que le script qui permet de mettre à jour la base de données tous les mois. Les calcules sont expliquer dans ce projet et dans le compte rendu technique.
+
+`./src/components/UpdateStudent`
+Cette vue permet de mettre un élève déjà existant, cette partie est en cours de développement donc indisponnible
+
+## But de l'application
+
+Cette application à pour but de rendre très accéssible la données afin d'avoir les staistiques les plus exacte possible
 
 ## Available Scripts
 
